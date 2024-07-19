@@ -29,7 +29,7 @@ public class CustomersApp extends Customers {
   }
 }
 
-public class Customers {
+class Customers {
 
   int ID;
   String name;
