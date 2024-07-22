@@ -1,0 +1,5 @@
+- Access Modifier
+  1. private    : Hanya bisa di akses dalam class
+  2. protected  : Hanya bisa di akses dalam package yang sama dan class turunannya
+  3. no modifier: Hanya bisa di akses dalam class dan class turunannya
+  4. public     : Bisa di akses dari manapun
