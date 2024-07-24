@@ -1,4 +1,4 @@
-package topan.app;
+package topan.collection.list;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package topan.collection;
+package topan.collection.set;
 
 import java.util.Collections;
 import java.util.HashSet;
