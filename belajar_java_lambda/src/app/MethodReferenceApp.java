@@ -1,5 +1,6 @@
 package app;
 
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 import util.StringUtil;
@@ -8,6 +9,9 @@ public class MethodReferenceApp {
   public static void main(String[] args) {
     MethodReferenceApp methodReferenceApp = new MethodReferenceApp();
     methodReferenceApp.run();
+
+    Function<String, String> upper = String::toUpperCase;
+    System.out.println(upper.apply("TOpaN"));
   }
 
   public void run() {
