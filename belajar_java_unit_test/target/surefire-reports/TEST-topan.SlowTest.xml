@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="topan.CalculatorTest" time="0.078" tests="6" errors="0" skipped="3" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="topan.SlowTest" time="12.018" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,26 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testDivFailed" classname="topan.CalculatorTest" time="0.031"/>
-  <testcase name="testAborted" classname="topan.CalculatorTest" time="0">
-    <skipped message="Test di batalkan karena bukan dev!" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Test di batalkan karena bukan dev!
-	at topan.CalculatorTest.testAborted(CalculatorTest.java:74)
-</skipped>
-    <system-out><![CDATA[Before
-After
-]]></system-out>
-  </testcase>
-  <testcase name="testAddSuccess" classname="topan.CalculatorTest" time="0"/>
-  <testcase name="testDivSuccess" classname="topan.CalculatorTest" time="0"/>
-  <testcase name="testComingSoon" classname="topan.CalculatorTest" time="0">
-    <skipped message="public void topan.CalculatorTest.testComingSoon() is @Disabled"/>
-  </testcase>
-  <testcase name="testAssumptions" classname="topan.CalculatorTest" time="0">
-    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
-	at topan.CalculatorTest.testAssumptions(CalculatorTest.java:80)
-</skipped>
-    <system-out><![CDATA[Before
-After
-]]></system-out>
-  </testcase>
+  <testcase name="slow1" classname="topan.SlowTest" time="4.006"/>
+  <testcase name="slow2" classname="topan.SlowTest" time="4.009"/>
+  <testcase name="slow3" classname="topan.SlowTest" time="4.003"/>
 </testsuite>

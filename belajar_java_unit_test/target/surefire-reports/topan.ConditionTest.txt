@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: topan.CalculatorTest
+Test set: topan.ConditionTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.078 s - in topan.CalculatorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.015 s - in topan.ConditionTest

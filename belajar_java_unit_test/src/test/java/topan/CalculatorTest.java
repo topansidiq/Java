@@ -6,6 +6,7 @@ import org.opentest4j.TestAbortedException;
 import topan.generator.SimpleDisplayNameGenerator;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.*;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -72,5 +73,10 @@ public class CalculatorTest {
     if (!"DEV".equals(profile)) {
       throw new TestAbortedException("Test di batalkan karena bukan dev!");
     }
+  }
+
+  @Test
+  public void testAssumptions() {
+    assumeTrue("DEV".equals(System.getenv("PROFILE")));
   }
 }
