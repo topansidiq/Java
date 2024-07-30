@@ -7,6 +7,8 @@ import java.sql.Statement;
 
 import org.junit.jupiter.api.Test;
 
+import topan_databases.utils.ConnectUtil;
+
 public class SQLInjectionTest {
   @Test
   public void testSQLInjection() throws SQLException {

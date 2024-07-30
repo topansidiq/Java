@@ -7,6 +7,8 @@ import java.sql.Statement;
 
 import org.junit.jupiter.api.Test;
 
+import topan_databases.utils.ConnectUtil;
+
 public class ResultSetTest {
   @Test
   public void testResultTest() throws SQLException {

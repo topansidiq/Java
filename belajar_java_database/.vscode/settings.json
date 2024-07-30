@@ -2,5 +2,6 @@
     "java.configuration.updateBuildConfiguration": "automatic",
     "dataworkspace.excludedProjects": [
         "belajar_java_database/belajar_java_database.sqlproj"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }

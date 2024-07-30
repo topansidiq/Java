@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
+import topan_databases.utils.ConnectUtil;
+
 public class ConnectionPoolTest {
   @Test
   public void testHikariCP() throws InterruptedException {

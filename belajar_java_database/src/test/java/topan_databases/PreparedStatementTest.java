@@ -7,6 +7,8 @@ import java.sql.SQLException;
 
 import org.junit.jupiter.api.Test;
 
+import topan_databases.utils.ConnectUtil;
+
 public class PreparedStatementTest {
   @Test
   public void testPrepareStatement() throws SQLException {

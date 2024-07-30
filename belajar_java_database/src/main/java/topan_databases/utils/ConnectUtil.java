@@ -1,4 +1,4 @@
-package topan_databases;
+package topan_databases.utils;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
