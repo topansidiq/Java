@@ -7,9 +7,9 @@ public interface TodolistRepository {
 
   void editTodoById(Integer id);
 
-  void removeById(Integer id);
-
   void removeAllTodo(Todolist todolist);
+
+  boolean removeById(Integer id);
 
   Todolist[] getAllTodo();
 }

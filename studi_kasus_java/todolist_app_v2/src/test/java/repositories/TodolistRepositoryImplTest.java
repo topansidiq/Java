@@ -1,8 +1,5 @@
 package repositories;
 
-import java.sql.Date;
-import java.sql.Time;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -28,16 +25,35 @@ public class TodolistRepositoryImplTest {
   public void testAdd() {
     Todolist todolist = new Todolist();
 
-    todolist.setTodo("Belajar Java OOP");
-    todolist.setDate(new Date(System.currentTimeMillis()));
-    todolist.setTime(new Time(System.currentTimeMillis()));
+    todolist.setTodo("Belajar Java Standard Classes");
 
     todolistRepository.addTodo(todolist);
+  }
+
+  @Test
+  public void testRemoveTodoById() {
+    System.out.println(todolistRepository.removeById(1));
+    System.out.println(todolistRepository.removeById(2));
+    System.out.println(todolistRepository.removeById(3));
+    System.out.println(todolistRepository.removeById(4));
+  }
+
+  @Test
+  public void testGetAllTodo() {
+    todolistRepository.addTodo(
+        new Todolist(
+            "Belajar Java Generic"));
+
+    Todolist[] todolists = todolistRepository.getAllTodo();
+
+    for (var todo : todolists) {
+      System.out.println(todo.getId() + ". " + todo.getTodo() + "[" + todo.getDate() + "][" + todo.getTime() + "]");
+    }
   }
 
   @AfterEach
   void tearDown() {
     dataSource.close();
-    ;
   }
+
 }

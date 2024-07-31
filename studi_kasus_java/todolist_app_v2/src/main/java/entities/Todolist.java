@@ -17,12 +17,15 @@ public class Todolist {
   }
 
   public Todolist(String todo, Date date, Time time) {
+    this(null, todo, date, time);
+  }
+
+  public Todolist(String todo) {
     this.todo = todo;
-    this.date = date;
-    this.time = time;
   }
 
   public Todolist() {
+    this(null);
   }
 
   public Integer getId() {
