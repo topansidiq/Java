@@ -24,10 +24,10 @@ public class ChoiceFormatTest {
   @Test
   public void testChoiceFormatInMessageFormat() {
     @SuppressWarnings("deprecation")
-    Locale locale = new Locale("in", "ID");
+    Locale locale = new Locale("en", "US");
     ResourceBundle resourceBundle = ResourceBundle.getBundle("message", locale);
 
-    String pattern = resourceBundle.getString("balance");
+    String pattern = resourceBundle.getString("welcome.message");
 
     MessageFormat messageFormat = new MessageFormat(pattern, locale);
     System.out.println(messageFormat.format(new Object[] { -100000 }));
